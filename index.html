@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Just a boring landing page." />
+  <meta name="keywords" content="" />
+  <meta name="author" content="zmcandee" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Cand.ee</title>
+  <!-- Facebook Share Preview -->
+  <meta property="og:url"			content="http://cand.ee/" />
+  <meta property="og:title"		content="" />
+  <meta property="og:description"	content="Just a boring landing page." />
+  <meta property="og:image"		content="" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Share Preview -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="cand.ee" />
+  <meta name="twitter:creator" content="" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:image:alt" content="" />
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:500;Lato:400&display=swap" rel="stylesheet">
+<style>
+body{
+  text-align: center;
+  font-family: Lato,Tahoma,sans-serif;
+  animation: fadein 3s;
+  background: #181820;
+  color: #EEEEEF;
+}
+h1,h2,h3,h4,h5 {
+  font-family: Oswald,Tahoma,sans-serif;
+  font-weight: 500;
+}
+h1 {
+  font-size: 8em;
+  margin-top: 1em;
+  transform: translateY(-0%);
+}
+
+h1 > span:last-child {
+  display: inline-block;
+  animation: dropout 6s;
+  font-size: 0;
+}
+@keyframes fadein { 
+  0% {opacity: 0;}
+  100% {opacity: 1;} 
+}
+@keyframes dropout { 
+  0%,55% {transform-origin: 0.05em 1.1875em; transform: rotate(0);  font-size: 1em;}
+  60%    {transform-origin: 0.05em 1.1875em; transform: rotate(170deg); font-size: 1em;}
+  63%    {transform-origin: 0.05em 1.1875em; transform: rotate(110deg); font-size: 1em;}
+  65%    {transform-origin: 0.05em 1.1875em; transform: rotate(135deg); font-size: 1em;}
+  100%   {transform-origin: 0.05em 1.1875em; transform: translateY(50vh);  font-size: 0;} 
+}
+</style>
+</head>
+<body>
+  <h1>Cand<span>.</span>ee</h1>
+  <p>Nothing more to see here, just a boring landing page with fun CSS3 animations.
+  </p>
+</body>
