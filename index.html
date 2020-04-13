@@ -25,18 +25,18 @@
   <meta name="twitter:image" content="" />
   <meta name="twitter:image:alt" content="" />
 
-<link href="https://fonts.googleapis.com/css?family=Oswald:500;Lato:400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rubik:700;Lato:400&display=swap" rel="stylesheet">
 <style>
 body{
   text-align: center;
   font-family: Lato,Tahoma,sans-serif;
-  animation: fadein 3s;
+  -webkit-animation: fadein 3s;
   background: #181820;
   color: #EEEEEF;
 }
 h1,h2,h3,h4,h5 {
-  font-family: Oswald,Tahoma,sans-serif;
-  font-weight: 500;
+  font-family: Rubik,Tahoma,sans-serif;
+  font-weight: 700;
 }
 h1 {
   font-size: 7em;
@@ -46,20 +46,26 @@ h1 {
 
 h1 > span:last-child {
   display: inline-block;
-  animation: dropout 6s;
-  font-size: 0;
+  animation: dropout 5s 0s;
+  font-size: .5em;
+  color: #777;
+  margin: 0 -0.1em;
 }
-@keyframes fadein { 
+@keyframes fadein {
   0% {opacity: 0;}
-  100% {opacity: 1;} 
+  100% {opacity: 1;}
 }
-@keyframes dropout { 
-  0%,55% {transform-origin: 0.05em 1.1875em; transform: rotate(0);  font-size: 1em;}
-  60%    {transform-origin: 0.05em 1.1875em; transform: rotate(170deg); font-size: 1em;}
-  63%    {transform-origin: 0.05em 1.1875em; transform: rotate(110deg); font-size: 1em;}
-  65%    {transform-origin: 0.05em 1.1875em; transform: rotate(135deg); font-size: 1em;}
-  100%   {transform-origin: 0.05em 1.1875em; transform: translateY(50vh);  font-size: 0;} 
+@keyframes dropout {
+  0%,55% {color: #EEEEEF; font-size: 1em; margin:0; transform-origin: 0.05em 0.95em; transform: rotate(0)}
+  60%    {color: #EEEEEF; font-size: 1em; margin:0; transform-origin: 0.05em 0.95em; transform: rotate(170deg)}
+  63%    {color: #EEEEEF; font-size: 1em; margin:0; transform-origin: 0.05em 0.95em; transform: rotate(110deg)}
+  65%    {color: #EEEEEF; font-size: 1em; margin:0; transform-origin: 0.05em 0.95em; transform: rotate(135deg)}
+  80%    {color: #EEEEEF; font-size: 0; margin:0.1em; transform-origin: 0.05em 0.95em; transform: translateY(50vh)}
+  81%    {color: #EEEEEF; font-size: 0; margin:0; transform-origin: 0.05em 0.95em; transform: none}
+  100%   {color: #777; font-size: 0.5em; margin: -0.1em}
 }
+
+
 </style>
 </head>
 <body>
